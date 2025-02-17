@@ -2,7 +2,7 @@ import { Box, Container, Button } from "@mui/material";
 import logo from "../../../assets/logo.svg";
 import { CustomInput, LoginCard, LoginContent, LoginWrapper } from "./style";
 import { useAuth } from "../../../hooks/useAuth";
-import {  useForm } from "react-hook-form";
+import { useForm } from "react-hook-form";
 
 const Login = () => {
   const auth = useAuth();
@@ -25,7 +25,7 @@ const Login = () => {
                   <img src={logo} style={{ marginBottom: "24px" }} />
                 </Box>
 
-                <CustomInput
+                {/* <CustomInput
                   defaultValue="Email"
                   id="email"
                   {...register("email", {
@@ -42,7 +42,7 @@ const Login = () => {
                   })}
                   error={!!errors?.password}
                   helperText={errors?.password?.message}
-                />
+                /> */}
 
                 <Box sx={{ width: "100%" }}>
                   <Button
@@ -53,7 +53,7 @@ const Login = () => {
                     }}
                     variant="contained"
                   >
-                    Sign in
+                    Get Started
                   </Button>
                 </Box>
               </LoginCard>
